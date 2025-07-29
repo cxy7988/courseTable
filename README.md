@@ -1,24 +1,7 @@
 ## Python 大学生课表 (.ics) 生成
 
-
-iCalendar 是广泛使用的日历数据交换标准，在诸如 Apple 日历、Google Calendar 的日历 app 中创建日历项，不仅可清晰的了解日程安排，更可体验 iOS、Android 系统为日历提供的各种功能：计划出行时间、日程提醒、如 Siri 与 Google Assistant 等智能语音助理自动化服务等
-
-并非所有学校都为学生提供 ics 日历，因此本代码旨在用 Python 3 协助你创建一个自己的基础 ics 日历课表
-
-* 兼容 Apple 日历、Google Calendar、Outlook Calendar 等日历应用，支持日历订阅
-* 支持多种课程时间安排：如「第2周，5 至 11 周中的单数周，13 至 17 周」
-* 支持添加教学楼信息，其中 Apple 日历还支持教学楼 Apple Maps 定位 ，在日历项中添加教学楼，就可在多个 iOS 地图等 app 中获得附加功能，如建议出发时间等
-* 导入到系统日历后，支持诸多由操作系统提供的日历功能：例如，在 iOS 设备中添加日历项后，你可以直接向 Siri 询问：「我下周五有什么日程？」获得下周五的课表；或是在 Apple Watch 表盘上显示下一个课程的时间；或是使用 Shortcut 捷径进行更多操作
-
-
-
-**在源代码设计上：**
-
-* 使用面向对象思想，对希望创建的课表日历项的标题、介绍内容高度可控
-* 使用 Python 自带的 `re`、`dataclass`、`datetime` 和 `hashlib` 库，无需任何第三方依赖
-* 所有函数均添加了 Python 的 `typing` 类型注解支持，便于快速检查代码正确性
-
-
+本项目基于[python-ical-timetable](https://github.com/junyilou/python-ical-timetable)项目扩展而来
+新增：导出为csv file的功能，可直接对接Wake Up课程表app中的csv导入功能
 
 ## 简单使用
 
